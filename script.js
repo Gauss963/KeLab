@@ -1,90 +1,99 @@
+const defaultPhoto = "images/member/IMG_2443.JPG";
+
 const members = {
   pi: [
     {
-      name: "Prof. PI Name",
+      name: "Prof. Ming-Hsiu Chen",
       role: "Principal Investigator",
-      focus: "Add a short bio, key research interests, and one-line academic profile here."
+      focus: "Computational methods, intelligent systems, and interdisciplinary engineering research.",
+      photo: defaultPhoto
     }
   ],
   ms1: [
     {
-      name: "M.S. Student 1",
+      name: "Yu-Ting Lin",
       role: "Year 1",
-      focus: "Research topic or project focus"
+      focus: "Data-driven modeling and system analysis.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 2",
+      name: "Chia-Hao Wang",
       role: "Year 1",
-      focus: "Research topic or project focus"
+      focus: "Machine learning applications in research workflows.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 3",
+      name: "Pei-Ju Huang",
       role: "Year 1",
-      focus: "Research topic or project focus"
+      focus: "Experimental design and quantitative evaluation.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 4",
+      name: "Cheng-En Liu",
       role: "Year 1",
-      focus: "Research topic or project focus"
+      focus: "Simulation pipelines and computational tools.",
+      photo: defaultPhoto
     }
   ],
   ms2: [
     {
-      name: "M.S. Student 5",
+      name: "Yi-An Chen",
       role: "Year 2",
-      focus: "Thesis theme or system area"
+      focus: "Thesis on predictive modeling and robust evaluation.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 6",
+      name: "Tzu-Hao Wu",
       role: "Year 2",
-      focus: "Thesis theme or system area"
+      focus: "Thesis on optimization methods and practical deployment.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 7",
+      name: "Po-Han Tsai",
       role: "Year 2",
-      focus: "Thesis theme or system area"
+      focus: "Thesis on multimodal sensing and analysis.",
+      photo: defaultPhoto
     },
     {
-      name: "M.S. Student 8",
+      name: "Hsuan-Yu Kuo",
       role: "Year 2",
-      focus: "Thesis theme or system area"
+      focus: "Thesis on scientific computing and reproducible systems.",
+      photo: defaultPhoto
     }
   ],
   ug: [
     {
-      name: "Undergraduate 1",
+      name: "Wei-Jie Lin",
       role: "Undergraduate Researcher",
-      focus: "Prototype, experiment, or project topic"
+      focus: "Prototype development and experimental support.",
+      photo: defaultPhoto
     },
     {
-      name: "Undergraduate 2",
+      name: "Yu-Hsuan Chang",
       role: "Undergraduate Researcher",
-      focus: "Prototype, experiment, or project topic"
+      focus: "Project implementation and data collection.",
+      photo: defaultPhoto
     },
     {
-      name: "Undergraduate 3",
+      name: "Chun-Kai Lee",
       role: "Undergraduate Researcher",
-      focus: "Prototype, experiment, or project topic"
+      focus: "Research assistance and system testing.",
+      photo: defaultPhoto
     }
   ]
 };
 
 function createPersonCard(member) {
-  const initials = member.name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((segment) => segment[0].toUpperCase())
-    .join("");
-
   const card = document.createElement("article");
   card.className = "person-card";
   card.setAttribute("data-reveal", "");
   card.innerHTML = `
-    <div class="person-avatar" aria-hidden="true">${initials}</div>
-    <p class="person-role">${member.role}</p>
-    <h4 class="person-name">${member.name}</h4>
-    <p class="person-focus">${member.focus}</p>
+    <img class="person-photo" src="${member.photo}" alt="${member.name}" />
+    <div class="person-meta">
+      <h4 class="person-name">${member.name}</h4>
+      <p class="person-role">${member.role}</p>
+      <p class="person-focus">${member.focus}</p>
+    </div>
   `;
   return card;
 }

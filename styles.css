@@ -73,9 +73,8 @@ ul {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid var(--line-strong);
+  width: 76px;
+  height: 76px;
   overflow: hidden;
 }
 
@@ -91,6 +90,7 @@ ul {
   color: var(--text);
   font-size: 1.55rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .eyebrow {
@@ -276,7 +276,7 @@ ul {
 .people-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 28px;
+  gap: 0 32px;
 }
 
 .people-grid-single {
@@ -285,27 +285,27 @@ ul {
 
 .person-card {
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 18px;
   align-items: start;
-  padding: 14px 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.person-avatar {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border: 1px solid var(--line-strong);
-  color: var(--accent);
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
+.person-photo {
+  display: block;
+  width: 96px;
+  height: 120px;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+
+.person-meta {
+  min-width: 0;
 }
 
 .person-role {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   color: var(--accent);
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 0.78rem;
@@ -315,11 +315,16 @@ ul {
 }
 
 .person-name {
-  font-size: 1.05rem;
+  margin-bottom: 6px;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .person-focus {
   margin: 0;
+  line-height: 1.65;
 }
 
 .timeline {
@@ -411,6 +416,16 @@ ul {
   .timeline-item {
     grid-template-columns: minmax(0, 1fr);
     gap: 8px;
+  }
+
+  .person-card {
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .person-photo {
+    width: 78px;
+    height: 98px;
   }
 
   .group-heading,
