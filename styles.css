@@ -76,9 +76,14 @@ ul {
   width: 38px;
   height: 38px;
   border: 1px solid var(--line-strong);
-  color: var(--accent);
-  font-size: 1.1rem;
-  font-weight: 700;
+  overflow: hidden;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-name {
