@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeLab | Research Laboratory</title>
+    <meta
+      name="description"
+      content="Official website for KeLab, featuring research directions, people, updates, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <a href="#top" class="brand-mark" aria-label="KeLab home">K</a>
+          <div>
+            <p class="eyebrow">Research Laboratory</p>
+            <a href="#top" class="brand-name">KeLab</a>
+          </div>
+        </div>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#people">People</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow">GitHub Pages Ready</p>
+            <h1>Building rigorous research with a close-knit team.</h1>
+            <p class="hero-text">
+              KeLab is a research group led by one principal investigator and an
+              interdisciplinary student team. We work across foundational
+              methods, practical systems, and student-driven collaboration.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#people">Meet the Team</a>
+              <a class="button button-secondary" href="#research"
+                >Explore Research</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Lab Snapshot</p>
+            <div class="stat-grid">
+              <article>
+                <strong>1</strong>
+                <span>Principal Investigator</span>
+              </article>
+              <article>
+                <strong>11</strong>
+                <span>Members</span>
+              </article>
+              <article>
+                <strong>4</strong>
+                <span>First-Year M.S. Students</span>
+              </article>
+              <article>
+                <strong>4</strong>
+                <span>Second-Year M.S. Students</span>
+              </article>
+              <article>
+                <strong>3</strong>
+                <span>Undergraduate Researchers</span>
+              </article>
+              <article>
+                <strong>2026</strong>
+                <span>Website Launch</span>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>A lab website shaped for clarity, recruiting, and research visibility.</h2>
+          </div>
+          <div class="two-column">
+            <div class="card">
+              <p>
+                This starter site follows the information-first structure common
+                to academic lab pages: clear identity, visible people, research
+                themes, current updates, and easy contact paths. The layout is
+                intentionally lightweight so it can be hosted directly on GitHub
+                Pages without any build step.
+              </p>
+            </div>
+            <div class="card accent-card">
+              <p class="card-title">What to replace next</p>
+              <ul class="check-list">
+                <li>Lab full name and short description</li>
+                <li>PI name, title, email, and office</li>
+                <li>Actual member names, interests, and photos</li>
+                <li>Research topics, projects, and publications</li>
+                <li>Institution, address, and external links</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="research" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Research</p>
+            <h2>Three featured directions to present the lab’s work at a glance.</h2>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <p class="research-index">01</p>
+              <h3>Core Methods</h3>
+              <p>
+                Introduce the lab’s central theories, algorithms, or scientific
+                methods. This area should explain the intellectual identity of
+                the group in a few precise sentences.
+              </p>
+            </article>
+            <article class="research-card">
+              <p class="research-index">02</p>
+              <h3>Applied Systems</h3>
+              <p>
+                Showcase how the group turns ideas into practical systems,
+                experiments, tools, or prototypes. This section works well for
+                demos, project pages, or cross-disciplinary collaborations.
+              </p>
+            </article>
+            <article class="research-card">
+              <p class="research-index">03</p>
+              <h3>Student-Led Projects</h3>
+              <p>
+                Highlight thesis topics, undergraduate research, and open
+                opportunities. This helps visitors quickly understand how
+                students can contribute and what they might work on.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="people" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">People</p>
+            <h2>Organized by role so visitors can scan the team immediately.</h2>
+          </div>
+
+          <div class="people-group">
+            <div class="group-heading">
+              <h3>Principal Investigator</h3>
+              <p>Leadership and research direction</p>
+            </div>
+            <div class="people-grid people-grid-single" id="pi-grid"></div>
+          </div>
+
+          <div class="people-group">
+            <div class="group-heading">
+              <h3>M.S. Students, Year 1</h3>
+              <p>4 members</p>
+            </div>
+            <div class="people-grid" id="ms1-grid"></div>
+          </div>
+
+          <div class="people-group">
+            <div class="group-heading">
+              <h3>M.S. Students, Year 2</h3>
+              <p>4 members</p>
+            </div>
+            <div class="people-grid" id="ms2-grid"></div>
+          </div>
+
+          <div class="people-group">
+            <div class="group-heading">
+              <h3>Undergraduate Researchers</h3>
+              <p>3 members</p>
+            </div>
+            <div class="people-grid" id="ug-grid"></div>
+          </div>
+        </section>
+
+        <section id="news" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">News</p>
+            <h2>Recent updates and milestones.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-date">Apr 2026</span>
+              <div>
+                <h3>Website launched</h3>
+                <p>
+                  The lab website is now ready for GitHub Pages deployment and
+                  structured for future content expansion.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Upcoming</span>
+              <div>
+                <h3>Add publications and project pages</h3>
+                <p>
+                  Extend this starter site with selected papers, featured
+                  projects, and downloadable resources.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Upcoming</span>
+              <div>
+                <h3>Recruiting and opportunities</h3>
+                <p>
+                  Use this area to announce open positions, thesis topics, or
+                  undergraduate project calls.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Simple contact details with room for institution-specific information.</h2>
+          </div>
+          <div class="contact-layout">
+            <div class="card">
+              <p class="card-title">Address</p>
+              <p>
+                KeLab<br />
+                Department / College Name<br />
+                University Name<br />
+                City, Country
+              </p>
+            </div>
+            <div class="card">
+              <p class="card-title">Email</p>
+              <p>pi-name@university.edu</p>
+            </div>
+            <div class="card">
+              <p class="card-title">Office</p>
+              <p>Building Name, Room 000</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 KeLab. Built as a static website for GitHub Pages.</p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
