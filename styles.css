@@ -283,6 +283,59 @@ ul {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.pi-card {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.pi-photo {
+  display: block;
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+
+.pi-meta {
+  min-width: 0;
+}
+
+.pi-name {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.pi-title {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 1.02rem;
+}
+
+.pi-bio {
+  margin: 0 0 18px;
+  max-width: 70ch;
+}
+
+.pi-details {
+  display: grid;
+  gap: 6px;
+}
+
+.pi-details p {
+  margin: 0;
+}
+
+.pi-details strong {
+  color: var(--text);
+}
+
 .person-card {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
@@ -416,6 +469,16 @@ ul {
   .timeline-item {
     grid-template-columns: minmax(0, 1fr);
     gap: 8px;
+  }
+
+  .pi-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .pi-photo {
+    width: 160px;
+    height: 200px;
   }
 
   .person-card {

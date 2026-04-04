@@ -5,7 +5,11 @@ const members = {
     {
       name: "Prof. Ming-Hsiu Chen",
       role: "Principal Investigator",
+      title: "Professor, National Taiwan University",
       focus: "Computational methods, intelligent systems, and interdisciplinary engineering research.",
+      bio: "Prof. Chen leads KeLab with research spanning computational modeling, learning-enabled analysis, and practical engineering systems. The group emphasizes rigorous methodology, reproducible workflows, and close collaboration across graduate and undergraduate projects.",
+      email: "mhchen@ntu.edu.tw",
+      office: "Engineering Building II, Room 517",
       photo: defaultPhoto
     }
   ],
@@ -98,6 +102,27 @@ function createPersonCard(member) {
   return card;
 }
 
+function createPiCard(member) {
+  const card = document.createElement("article");
+  card.className = "pi-card";
+  card.setAttribute("data-reveal", "");
+  card.innerHTML = `
+    <img class="pi-photo" src="${member.photo}" alt="${member.name}" />
+    <div class="pi-meta">
+      <p class="person-role">${member.role}</p>
+      <h3 class="pi-name">${member.name}</h3>
+      <p class="pi-title">${member.title}</p>
+      <p class="pi-bio">${member.bio}</p>
+      <div class="pi-details">
+        <p><strong>Email:</strong> ${member.email}</p>
+        <p><strong>Office:</strong> ${member.office}</p>
+        <p><strong>Research:</strong> ${member.focus}</p>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
 function populatePeople(groupId, groupMembers) {
   const target = document.getElementById(groupId);
   if (!target) return;
@@ -107,7 +132,16 @@ function populatePeople(groupId, groupMembers) {
   });
 }
 
-populatePeople("pi-grid", members.pi);
+function populatePi(groupId, groupMembers) {
+  const target = document.getElementById(groupId);
+  if (!target) return;
+
+  groupMembers.forEach((member) => {
+    target.appendChild(createPiCard(member));
+  });
+}
+
+populatePi("pi-grid", members.pi);
 populatePeople("ms1-grid", members.ms1);
 populatePeople("ms2-grid", members.ms2);
 populatePeople("ug-grid", members.ug);
