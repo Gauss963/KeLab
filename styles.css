@@ -115,6 +115,11 @@ ul {
   font-size: 0.96rem;
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .nav-toggle {
   display: none;
   border: 1px solid var(--line-strong);
@@ -180,6 +185,17 @@ ul {
   border-left: 3px solid var(--line-strong);
 }
 
+.page-intro {
+  padding-top: 42px;
+}
+
+.page-intro h1 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
 .panel-label,
 .card-title,
 .group-heading p,
@@ -241,6 +257,30 @@ ul {
   gap: 28px;
 }
 
+.page-stack {
+  display: grid;
+  gap: 28px;
+}
+
+.detail-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.detail-item h2,
+.publication-item h2,
+.news-entry h2 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
 .research-item {
   padding-top: 4px;
 }
@@ -257,6 +297,25 @@ ul {
 
 .research-item p:last-child {
   margin-bottom: 0;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.summary-item h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.section-link {
+  margin: 20px 0 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .people-group + .people-group {
@@ -380,6 +439,41 @@ ul {
   line-height: 1.65;
 }
 
+.publication-list,
+.news-list {
+  display: grid;
+  gap: 0;
+}
+
+.publication-item,
+.news-entry {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.publication-item:first-child,
+.news-entry:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.publication-meta {
+  margin: 0 0 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.94rem;
+}
+
+.publication-links {
+  margin: 8px 0 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.publication-links a + a {
+  margin-left: 18px;
+}
+
 .timeline {
   display: grid;
   gap: 0;
@@ -435,7 +529,8 @@ ul {
   .two-column,
   .research-grid,
   .contact-layout,
-  .people-grid {
+  .people-grid,
+  .summary-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }
