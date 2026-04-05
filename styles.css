@@ -459,7 +459,7 @@ ul {
 
 .publication-feature {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 28px;
   align-items: start;
   padding: 18px 0;
@@ -473,8 +473,8 @@ ul {
 
 .publication-image {
   display: block;
-  width: 220px;
-  height: 150px;
+  width: 180px;
+  height: 120px;
   object-fit: cover;
   background: #f3f3f3;
 }
@@ -608,8 +608,9 @@ ul {
   }
 
   .publication-image {
-    width: 100%;
-    height: 190px;
+    width: 180px;
+    height: 120px;
+    max-width: 100%;
   }
 
   .person-card {
