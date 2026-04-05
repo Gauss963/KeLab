@@ -1,5 +1,3 @@
-const defaultPhoto = "images/member/IMG_2443.JPG";
-
 const members = {
   pi: [
     {
@@ -7,10 +5,10 @@ const members = {
       role: "Principal Investigator",
       title: "Professor, National Taiwan University",
       focus: "Computational methods, intelligent systems, and interdisciplinary engineering research.",
-      bio: "Prof. Chen leads KeLab with research spanning computational modeling, learning-enabled analysis, and practical engineering systems. The group emphasizes rigorous methodology, reproducible workflows, and close collaboration across graduate and undergraduate projects.",
+      bio: "Prof. Chen leads Ke Earthquake Lab with research spanning computational modeling, learning-enabled analysis, and practical engineering systems. The group emphasizes rigorous methodology, reproducible workflows, and close collaboration across graduate and undergraduate projects.",
       email: "mhchen@ntu.edu.tw",
       office: "Engineering Building II, Room 517",
-      photo: defaultPhoto
+      photo: "images/member/IMG_2443.JPG"
     }
   ],
   ms1: [
@@ -18,25 +16,25 @@ const members = {
       name: "Yu-Ting Lin",
       role: "Year 1",
       focus: "Data-driven modeling and system analysis.",
-      photo: defaultPhoto
+      photo: "images/member/1e599ceb-ce32-4588-b931-f1dd33c99b37.jpg"
     },
     {
       name: "Chia-Hao Wang",
       role: "Year 1",
       focus: "Machine learning applications in research workflows.",
-      photo: defaultPhoto
+      photo: "images/member/8b97e421-39d2-4295-854f-d194e06a99fc.jpg"
     },
     {
       name: "Pei-Ju Huang",
       role: "Year 1",
       focus: "Experimental design and quantitative evaluation.",
-      photo: defaultPhoto
+      photo: "images/member/90e3ffe4-f26b-4e6e-8ee4-c59e07baf28f.jpg"
     },
     {
       name: "Cheng-En Liu",
       role: "Year 1",
       focus: "Simulation pipelines and computational tools.",
-      photo: defaultPhoto
+      photo: "images/member/clker-free-vector-images-teacher-295387_1920.png"
     }
   ],
   ms2: [
@@ -44,25 +42,25 @@ const members = {
       name: "Yi-An Chen",
       role: "Year 2",
       focus: "Thesis on predictive modeling and robust evaluation.",
-      photo: defaultPhoto
+      photo: "images/member/coxinhafotos-avatar-2092113.svg"
     },
     {
       name: "Tzu-Hao Wu",
       role: "Year 2",
       focus: "Thesis on optimization methods and practical deployment.",
-      photo: defaultPhoto
+      photo: "images/member/mohamed_hassan-avatar-3637561_1920.png"
     },
     {
       name: "Po-Han Tsai",
       role: "Year 2",
       focus: "Thesis on multimodal sensing and analysis.",
-      photo: defaultPhoto
+      photo: "images/member/mohamed_hassan-man-3414477_1920.png"
     },
     {
       name: "Hsuan-Yu Kuo",
       role: "Year 2",
       focus: "Thesis on scientific computing and reproducible systems.",
-      photo: defaultPhoto
+      photo: "images/member/openclipart-vectors-man-156584_1920.png"
     }
   ],
   ug: [
@@ -70,19 +68,19 @@ const members = {
       name: "Wei-Jie Lin",
       role: "Undergraduate Researcher",
       focus: "Prototype development and experimental support.",
-      photo: defaultPhoto
+      photo: "images/member/prettysleepy-nun-4018982_1920.png"
     },
     {
       name: "Yu-Hsuan Chang",
       role: "Undergraduate Researcher",
       focus: "Project implementation and data collection.",
-      photo: defaultPhoto
+      photo: "images/member/1e599ceb-ce32-4588-b931-f1dd33c99b37.jpg"
     },
     {
       name: "Chun-Kai Lee",
       role: "Undergraduate Researcher",
       focus: "Research assistance and system testing.",
-      photo: defaultPhoto
+      photo: "images/member/8b97e421-39d2-4295-854f-d194e06a99fc.jpg"
     }
   ]
 };

@@ -1,4 +1,4 @@
-# KeLab Website
+# Ke Earthquake Lab Website
 
 Static lab website starter designed for GitHub Pages.
 
