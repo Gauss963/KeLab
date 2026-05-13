@@ -1,14 +1,14 @@
 const members = {
   pi: [
     {
-      name: "Prof. Ming-Hsiu Chen",
+      name: "Dr. Chun-Yu Ke",
       role: "Principal Investigator",
-      title: "Professor, National Taiwan University",
-      focus: "Computational methods, intelligent systems, and interdisciplinary engineering research.",
-      bio: "Prof. Chen leads Ke Earthquake Lab with research spanning computational modeling, learning-enabled analysis, and practical engineering systems. The group emphasizes rigorous methodology, reproducible workflows, and close collaboration across graduate and undergraduate projects.",
-      email: "contact@example.edu",
-      office: "Room 000",
-      photo: "images/member/IMG_2443.JPG"
+      title: "National Taiwan University",
+      focus: "Laboratory earthquakes, fracture mechanics, solid mechanics, finite element modeling, and spectral-boundary-integral methods.",
+      bio: "Dr. Ke studies the mechanics of laboratory-generated earthquakes using theoretical approaches from solid mechanics and fracture mechanics together with numerical models such as finite element and spectral-boundary-integral methods. He earned his Ph.D. in Structural Engineering from Cornell University and his M.S. and B.S. in Civil Engineering from National Taiwan University.",
+      email: "me@chunyuke.com",
+      office: "No. 188, Section 3, Xinhai Rd, Da'an District, Taipei City, 106",
+      photo: "images/member/chun-yu-ke.jpeg"
     }
   ],
   ms1: [
