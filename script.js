@@ -6,8 +6,8 @@ const members = {
       title: "Professor, National Taiwan University",
       focus: "Computational methods, intelligent systems, and interdisciplinary engineering research.",
       bio: "Prof. Chen leads Ke Earthquake Lab with research spanning computational modeling, learning-enabled analysis, and practical engineering systems. The group emphasizes rigorous methodology, reproducible workflows, and close collaboration across graduate and undergraduate projects.",
-      email: "mhchen@ntu.edu.tw",
-      office: "Engineering Building II, Room 517",
+      email: "contact@example.edu",
+      office: "Room 000",
       photo: "images/member/IMG_2443.JPG"
     }
   ],
