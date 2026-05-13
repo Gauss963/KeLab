@@ -176,10 +176,6 @@ ul {
   font-weight: 700;
 }
 
-.button::after {
-  content: " ->";
-}
-
 .hero-panel {
   padding-left: 24px;
   border-left: 3px solid var(--line-strong);
